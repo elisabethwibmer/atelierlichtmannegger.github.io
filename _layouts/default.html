@@ -17,7 +17,7 @@
       html, body, h1, h2, h3, h4, p {font-family: 'Marcellus', serif !important; color:#111111;}
       h1,h2,h3,h4 {font-size: 17px !important;line-height: 15px !important;}
        p, .date {font-size: 14px !important;line-height: 15px !important;}
-
+      body {margin:0px !important; padding: 0px!important;}
       .baselink {font-family: 'Open Sans', sans-serif! important; color:#111111;}
       .white {background-color:white! important;}
        .black {background-color:black! important;}
@@ -66,8 +66,8 @@ color:#111111; font-weight: 700;text-decoration:none;        }
   </head>
   <body>
     <div class="uk-container-expand">
-      <div class="uk-child-width-1-2@m uk-width-1-1 uk-flex uk-flex-middle" uk-grid  uk-height-viewport="expand: true">
-        <div class="uk-text-center white uk-flex uk-flex-center uk-child-width-1-1 uk-grid-small" id="header" uk-grid>
+      <div class="uk-child-width-1-2@m uk-width-1-1 uk-flex uk-flex-middle uk-grid-collapse" uk-grid  uk-height-viewport="expand: true">
+        <div class="uk-text-center white uk-flex uk-flex-center uk-child-width-1-1 uk-grid-small uk-flex-first@m" id="header" uk-grid>
           <h1><a class="baselink" href="{{ "/" | absolute_url }}">Atelier<br/>Lichtmannegger</a></h1>
           {% if site.logo %}
                   <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -85,7 +85,9 @@ color:#111111; font-weight: 700;text-decoration:none;        }
         <p>+43 (0)681 20752811</p>
         <p>hi@lichtmannegger.com</p>  
         </div>
+      <div class="uk-flex-last@m">
             {{ content }}
+      </div>
         </div>
     </div>
     {% if site.google_analytics %}
