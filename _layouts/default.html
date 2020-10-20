@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+  <html>
+    <head>
+      {% include header.html %}
+    </head>
+    <body>
+      <div class="uk-offcanvas-content">
+      {% include navigation.html %}
+      {{ content }}
+      {% include footer.html %}
+      
+      </div>
+      {% include scripts.ext %}
+    </body>
+</html>

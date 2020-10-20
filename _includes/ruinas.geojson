@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [{{ ruinas.long }}, {{ruinas.lat}}]
+        },
+        "properties": {
+          "title": "{{ ruinas.name }}",
+          "description": "{{ ruinas.desc1 }}"
+        }
+      }
+  ]
+}

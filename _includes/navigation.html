@@ -1,0 +1,39 @@
+{% assign pueblos = {{site.ruinas | group_by:"city"}} %}
+{% assign tipo = {{site.ruinas | group_by:"art"}} %}
+
+
+<nav class="uk-navbar-container uk-navbar-transparent" style="height: 50px" uk-navbar="mode: click">
+    <div class="uk-navbar-center">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"> <a href="/"><span uk-icon="home"></span>
+</a>
+</li>
+
+
+        </ul>
+
+
+
+
+    </div>
+</nav>
+
+
+
+
+<nav class="uk-navbar-container  uk-navbar-transparent" style="height: 50px"  uk-navbar="mode: click">
+    <div class="uk-navbar-center">
+
+
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"> <a href="/ruinas">Ver ruinas</a></li>
+            <li> <a href="/mapa">Mapa</a></li>
+            <li> <a href="/about">Sobre Nosotros</a></li>
+
+
+        </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,73 @@
+url: https://atelierlichtmannegger.github.io
+baseurl:
+markdown: kramdown
+permalink: /blog/:title
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+navigation:
+  - title: Tipo
+    url: /tipo/
+  - title: Poblicaion
+    url: /poblication/
+  - title: Mapa
+    url: /mapa/
+  - title: Estado
+    url: /estado/
+authors:
+  roman:
+    display_name: Roman Lichtmannegger
+prose:
+  ignore:
+    - _includes
+    - _layouts
+    - pages
+    - .gitignore
+    - _config.yml
+    - CNAME
+    - Gemfile
+    - README.md
+    - _scss/
+encoding: UTF-8
+collections:
+
+
+    ruinas:
+      output: true
+      permalink: /:collection/:path
+
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+permalink: blog/:title
+defaults:
+  -
+    scope:
+      path: '' # an empty string here means all files in the project
+      type: posts # previously `post` in Jekyll 2.2.
+    values:
+      layout: post
+
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+# seo
+title: "Atelier atelierlichtmannegger"
+description: bli bla blu
+twitter:
+  username:
+logo: "hhh"
+social:
+  name: Roman Lichtmannegger
+  links:
+
+google_site_verification:  asdasd
