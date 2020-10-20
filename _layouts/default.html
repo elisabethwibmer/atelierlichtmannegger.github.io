@@ -67,7 +67,7 @@ color:#111111; font-weight: 700;text-decoration:none;        }
   <body>
     <div class="uk-container-expand">
       <div class="uk-child-width-1-2@m uk-width-1-1 uk-grid-collapse uk-flex uk-flex-middle" uk-grid  uk-height-viewport="expand: true">
-        <div class="uk-text-center white" id="header">
+        <div class="uk-text-center white uk-flex uk-flex-center" id="header" uk-grid>
           <h1><a class="baselink" href="{{ "/" | absolute_url }}">Atelier<br/>Lichtmannegger</a></h1>
           {% if site.logo %}
                   <img src="{{site.logo | relative_url}}" alt="Logo" />
