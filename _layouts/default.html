@@ -12,13 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap');
       #header {background-color:white;}
       html, body, h1, h2, h3, h4, p {font-family: 'Marcellus', serif !important; color:#111111;}
-      
+      .baselink {font-family: 'Open Sans', sans-serif! important; color:#111111;}
       @media (max-width: 540px)
         {
-                h1, h2, h3, h4,  {
+                h1, h2, h3, h4, .baselink  {
 
           font-size: 14px !important;
           line-height: 15px !important;
@@ -27,7 +27,6 @@
         }
       
       .baselink {color:#111111; font-weight: 700;text-decoration:none;}
-        .baselink {color:#111111; font-weight: 700;text-decoration:none;}
 
       
               /* unvisited link */
@@ -36,15 +35,15 @@
       }
 
         /* visited link */
-        .baselink :visited {
+        .baselink:visited {
 color:#111111; font-weight: 700;text-decoration:none;        }
 
         /* mouse over link */
-        .baselink :hover {
+        .baselink:hover {
 color:#111111; font-weight: 700;text-decoration:none;        }
 
         /* selected link */
-        .baselink :active {
+        .baselink:active {
 color:#111111; font-weight: 700;text-decoration:none;        }
      
       
@@ -54,7 +53,7 @@ color:#111111; font-weight: 700;text-decoration:none;        }
     <div class="uk-container-expand">
       <div class="uk-child-width-1-2@m uk-width-1-1 uk-grid-small" uk-grid>
         <div class="uk-text-center" id="header">
-          <h1><a class="baselink"href="{{ "/" | absolute_url }}">Roman Lichtmannegger</a></h1>
+          <h1><a class="baselink" href="{{ "/" | absolute_url }}">Roman Lichtmannegger</a></h1>
           {% if site.logo %}
                   <img src="{{site.logo | relative_url}}" alt="Logo" />
           {% endif %}
