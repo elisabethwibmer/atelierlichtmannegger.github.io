@@ -67,42 +67,29 @@ color:#111111; font-weight: 700;text-decoration:none;        }
   <body>
     <div class="uk-container-expand">
       <div class="uk-child-width-1-2@m uk-width-1-1 uk-grid-collapse uk-flex uk-flex-middle" uk-grid  uk-height-viewport="expand: true">
-        <div class="uk-text-center white uk-flex uk-flex-center uk-child-width-1-1 uk-gridd-collapse" id="header" uk-grid>
+        <div class="uk-text-center white uk-flex uk-flex-center uk-child-width-1-1 uk-grid-small" id="header" uk-grid>
           <h1><a class="baselink" href="{{ "/" | absolute_url }}">Atelier<br/>Lichtmannegger</a></h1>
           {% if site.logo %}
                   <img src="{{site.logo | relative_url}}" alt="Logo" />
           {% endif %}
           <p class="uk-width-1-2@m">{{ site.description | default: site.github.project_tagline }}</p>
-          
           <p>
-         
-<span class="waves">*</span>
-          <h2 class="italic date" style="color:grey">21st of Ocotber 2020</h2>
-          <h3>Hold on.</h3>
-          <p>I'll be offline for a while.</p>
-<span class="waves">≈ ≈ ≈</span>
+            <span class="waves">*</span>
+            <h2 class="italic date" style="color:grey">21st of Ocotber 2020</h2>
+            <h3>Hold on.</h3>
+            <p>We are currently relocating.</p>
+            <span class="waves">≈ ≈ ≈</span>
           </p>
-        
-        <h2>Contact:</h2>
-+43 (0)681 20752811<br/>
-atelier@lichtmannegger.com<br/>
-
-
-          
-          </p>
-
-
-          
+          <p>
+          <h2>Contact:</h2>
+          +43 (0)681 20752811<br/>
+          atelier@lichtmannegger.com
+          </p>  
         </div>
-         
-   
           <div class="black">
-          {{ content }}
+            {{ content }}
+          </div>
         </div>
-        
-        </div>
-      
-      
     </div>
     {% if site.google_analytics %}
     <script>
@@ -113,7 +100,6 @@ atelier@lichtmannegger.com<br/>
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
-    {% endif %}
-    
+    {% endif %} 
   </body>
 </html>
