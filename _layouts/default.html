@@ -18,7 +18,7 @@
       
       @media (max-width: 540px)
         {
-                h1, h2, h3, h4, .baselink {
+                h1, h2, h3, h4,  {
 
           font-size: 14px !important;
           line-height: 15px !important;
@@ -26,7 +26,26 @@
           }
         }
       
-      .baselink {color:#111111;}
+      .baselink {color:#111111; font-weight: 700;text-decoration:none;}
+        .baselink {color:#111111; font-weight: 700;text-decoration:none;}
+
+      
+              /* unvisited link */
+        .baselink:link {
+      color:#111111; font-weight: 700;text-decoration:none;
+      }
+
+        /* visited link */
+        .baselink :visited {
+color:#111111; font-weight: 700;text-decoration:none;        }
+
+        /* mouse over link */
+        .baselink :hover {
+color:#111111; font-weight: 700;text-decoration:none;        }
+
+        /* selected link */
+        .baselink :active {
+color:#111111; font-weight: 700;text-decoration:none;        }
      
       
     </style>
