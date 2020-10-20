@@ -14,28 +14,21 @@
   </head>
   <body>
     <div class="uk-container-expand">
-      <div class="uk-width-1-2@m uk-grid-small" uk-grid>
+      <div class="uk-width-1-2@m uk-width-1-1 uk-flex uk-flex-center uk-grid-small" uk-grid>
         <div>
+          <header>
           <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-  {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-  {% endif %}
-
-            <p>{{ site.description | default: site.github.project_tagline }}</p>
-        
+          {% if site.logo %}
+                  <img src="{{site.logo | relative_url}}" alt="Logo" />
+          {% endif %}
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          </header>
         </div>
-        <div class="uk-background-primary">
-                                                        
+        
+        <div>                          
           <p>{{ content }}</p>
-
-
-
         </div>
-        
-       
-
-
-      </header>
+      
         </div>
     </div>
     {% if site.google_analytics %}
